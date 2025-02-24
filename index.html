@@ -1,10 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta http-equiv="refresh" content="0; url=https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/callback&response_type=code&scope=identify">
+</head>
+<body>
+    <div class="redirect-container">
+        <h1>Redirecting to Discord OAuth...</h1>
+        <button class="redirect-button" disabled>Loading...</button>
+    </div>
+</body>
+</html>
+
+<!-- callback.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Callback</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Authorization successful!</h1>
-    <p>You can now close this window.</p>
+    <div class="callback-container">
+        <h1>Authorization successful!</h1>
+        <p>You can now close this window.</p>
+        <button class="button" onclick="window.close()">Close</button>
+    </div>
 </body>
 </html>
