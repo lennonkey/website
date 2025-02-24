@@ -1,3 +1,4 @@
+/* General reset and body setup */
 * {
     margin: 0;
     padding: 0;
@@ -6,47 +7,89 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    text-align: center;
-    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    background-image: url('background-texture.png'); /* Replace with your background texture */
+    background-size: cover;
+    background-position: center;
 }
 
+/* Main container for UI elements */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header */
 h1 {
-    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
 }
 
+/* Button styling */
 button {
-    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-image: url('button-texture.png'); /* Replace with button texture */
+    background-size: cover;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2980b9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-#messageContainer {
-    margin-top: 20px;
-    padding: 10px;
-    display: none;
-    background-color: #e7f5e7;
-    color: #333;
-    border: 1px solid #4CAF50;
-    border-radius: 5px;
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #ecf0f1;
+    background-image: url('input-texture.png'); /* Replace with input texture */
+    background-size: cover;
+    transition: border 0.3s ease;
 }
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #3498db;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Link styling */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
