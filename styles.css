@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", "Arial", sans-serif;
+    background-color: #2f3136;
+    color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #4f66d2;
+}
+
+a:hover {
+    color: #4e66d1;
+    text-decoration: underline;
+}
+
+/* Redirect Page Styles */
+.redirect-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #2f3136, #2c2f33);
+    background-size: 100% 100%;
+}
+
+.redirect-container h1 {
+    font-size: 36px;
+    margin-bottom: 64px;
+    color: #fff;
+}
+
+.redirect-button {
+    background-color: #4f66d2;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.redirect-button:hover {
+    background-color: #4e66d1;
+}
+
+/* Callback Page Styles */
+.callback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #2f3136, #2c2f33);
+    background-size: 100% 100%;
+}
+
+.callback-container h1 {
+    font-size: 36px;
+    margin-bottom: 64px;
+    color: #fff;
+}
+
+.callback-container p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+/* Button Styles */
+.button {
+    background-color: #4f66d2;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #4e66d1;
+}
+
+/* Error Styles */
+.error {
+    color: #f44336;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
