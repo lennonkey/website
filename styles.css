@@ -6,37 +6,42 @@
 }
 
 body {
-    font-family: "Inter", "Arial", sans-serif;
-    background-image: linear-gradient(to bottom, #2f3136, #2c2f33);
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-image: linear-gradient(135deg, #2c2f33 0%, #21252b 100%);
     color: #fff;
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+h1, h2, p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 16px;
-    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
     color: #fff;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 8px;
+    font-size: 28px;
+    margin-bottom: 12px;
     font-weight: 500;
     color: #fff;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 p {
-    font-size: 16px;
-    margin-bottom: 16px;
-    color: #fff;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+    text-align: center;
 }
 
 a {
@@ -50,64 +55,44 @@ a:hover {
 }
 
 /* Redirect Page Styles */
-.redirect-container {
+.redirect-container, .callback-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 32px;
+    padding: 40px;
     background-color: #2f3136;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
 
-.redirect-button {
+.redirect-container:hover, .callback-container:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.redirect-button, .callback-button {
     background-color: #4f66d2;
     color: #fff;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    margin-top: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
-.redirect-button:hover {
+.redirect-button:hover, .callback-button:hover {
     background-color: #4e66d1;
-}
-
-/* Callback Page Styles */
-.callback-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 32px;
-    background-color: #2f3136;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.callback-button {
-    background-color: #4f66d2;
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 16px;
-}
-
-.callback-button:hover {
-    background-color: #4e66d1;
+    transform: scale(1.05);
 }
 
 /* Error Styles */
 .error {
     color: #f44336;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 32px;
+    text-align: center;
 }
