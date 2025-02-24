@@ -1,98 +1,52 @@
-/* Global Styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    background-image: linear-gradient(135deg, #2c2f33 0%, #21252b 100%);
-    color: #fff;
-    height: 100vh;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    height: 100vh;
 }
 
-h1, h2, p {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
+    color: #4CAF50;
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 12px;
-    font-weight: 500;
-    color: #fff;
-    text-align: center;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #ccc;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: #4f66d2;
-}
-
-a:hover {
-    color: #4e66d1;
-    text-decoration: underline;
-}
-
-/* Redirect Page Styles */
-.redirect-container, .callback-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-    background-color: #2f3136;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease-in-out;
-}
-
-.redirect-container:hover, .callback-container:hover {
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-}
-
-.redirect-button, .callback-button {
-    background-color: #4f66d2;
-    color: #fff;
-    padding: 14px 28px;
-    border: none;
-    border-radius: 8px;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 500;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#messageContainer {
     margin-top: 20px;
-    transition: all 0.3s ease;
-}
-
-.redirect-button:hover, .callback-button:hover {
-    background-color: #4e66d1;
-    transform: scale(1.05);
-}
-
-/* Error Styles */
-.error {
-    color: #f44336;
-    font-size: 20px;
-    margin-bottom: 32px;
-    text-align: center;
+    padding: 10px;
+    display: none;
+    background-color: #e7f5e7;
+    color: #333;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
 }
